@@ -1,6 +1,11 @@
 # DbUrlParser
 A lightweight simple library that parses DbUrl and transforming it DSN:
 
+### Installation
+`composer require snoussi/dburl_parser`
+
+### Usage
+
 ```php
 use Snoussi\DbUrlParser;
 
