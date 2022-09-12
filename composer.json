@@ -14,9 +14,9 @@
     ],
     "license": ["MIT"],
     "require": {
-        "phpunit/phpunit": "^9.5"
     },
     "require-dev": {
+        "phpunit/phpunit": "^9.5",
         "roave/security-advisories": "dev-latest",
         "symplify/easy-coding-standard": "^11.1",
         "phpstan/phpstan": "^1.8",
