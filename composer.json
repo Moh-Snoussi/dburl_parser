@@ -1,0 +1,28 @@
+{
+    "name": "snoussi/dburl_parser",
+    "autoload": {
+        "psr-4": {
+            "Snoussi\\DbUrlParser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohamed Snoussi",
+            "email": "sooniic@live.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "symplify/easy-coding-standard": "^11.1",
+        "phpstan/phpstan": "^1.8",
+        "rector/rector": "^0.14.2"
+    },
+    "scripts": {
+       "phpstan": "vendor/bin/phpstan analyse src",
+        "rector": "vendor/bin/rector",
+        "test": "./vendor/bin/phpunit tests"
+    }
+}
