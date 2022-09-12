@@ -11,6 +11,7 @@
             "email": "sooniic@live.com"
         }
     ],
+    "license": ["MIT"],
     "require": {
         "phpunit/phpunit": "^9.5"
     },
