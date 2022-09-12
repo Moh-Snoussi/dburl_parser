@@ -1,5 +1,6 @@
 {
     "name": "snoussi/dburl_parser",
+    "description": "A lightweight library that parses DbUrl and transforming it DSN",
     "autoload": {
         "psr-4": {
             "Snoussi\\DbUrlParser\\": "src/"
