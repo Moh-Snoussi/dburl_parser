@@ -80,6 +80,6 @@ class DbUrlParserTest extends TestCase
 	{
 		$dbUrl  = "mysql://dbUser:@127.0.0.1:3306/dbName?serverVersion=5.7";
 		$actual = DbUrlParser::getDsnFromUrl( $dbUrl );
-		self::assertSame( "mysql:host=127.0.0.1;dbname=dbName:3306;", $actual );
+		self::assertSame( "mysql:host=127.0.0.1:3306;dbname=dbName;", $actual );
 	}
 }
