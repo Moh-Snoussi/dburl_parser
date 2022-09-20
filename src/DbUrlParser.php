@@ -70,7 +70,7 @@ class DbUrlParser
 	 */
 	public static function getDsnFromParts( array $parts ): string
 	{
-		return $parts[ 'engine' ] . ':host=' . $parts[ 'host' ] . ';dbname=' . $parts[ 'dbName' ] . ':' . $parts[ 'port' ];
+		return $parts[ 'engine' ] . ':host=' . $parts[ 'host' ] .  ':' . $parts[ 'port' ] . ';dbname=' . $parts[ 'dbName' ];
 	}
 
 }
