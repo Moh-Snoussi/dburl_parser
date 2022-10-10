@@ -57,8 +57,7 @@ class DbUrlParser
 	public static function getDsnFromUrl( string $databaseUrl ): string
 	{
 		$parts = self::getDatabaseUrlParts( $databaseUrl );
-
-		return $parts[ 'engine' ] . ':host=' . $parts[ 'host' ] . ';dbname=' . $parts[ 'dbName' ] . ':' . $parts[ 'port' ] . ';';
+		return $this->getDsnFromParts($parts);
 	}
 
 	/**
@@ -70,7 +69,12 @@ class DbUrlParser
 	 */
 	public static function getDsnFromParts( array $parts ): string
 	{
-		return $parts[ 'engine' ] . ':host=' . $parts[ 'host' ] .  ':' . $parts[ 'port' ] . ';dbname=' . $parts[ 'dbName' ] . ';';
+		$results = $parts[ 'engine' ] . ':host=' . $parts[ 'host' ];
+		if ($parts['port'] !== '') {
+			$results .= . ':' . $parts[ 'port' ];
+		}
+		$results .= ';dbname=' . $parts[ 'dbName' ] . ';'
+		return $results;
 	}
 
 }
