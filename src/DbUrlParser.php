@@ -57,7 +57,7 @@ class DbUrlParser
 	public static function getDsnFromUrl( string $databaseUrl ): string
 	{
 		$parts = self::getDatabaseUrlParts( $databaseUrl );
-		return $this->getDsnFromParts($parts);
+		return self::getDsnFromParts($parts);
 	}
 
 	/**
