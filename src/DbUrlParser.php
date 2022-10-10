@@ -71,7 +71,7 @@ class DbUrlParser
 	{
 		$results = $parts[ 'engine' ] . ':host=' . $parts[ 'host' ];
 		if ($parts['port'] !== '') {
-			$results .= . ':' . $parts[ 'port' ];
+			$results .= ':' . $parts[ 'port' ];
 		}
 		$results .= ';dbname=' . $parts[ 'dbName' ] . ';';
 		return $results;
