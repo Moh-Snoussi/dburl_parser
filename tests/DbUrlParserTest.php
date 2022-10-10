@@ -13,7 +13,7 @@ class DbUrlParserTest extends TestCase
 		$parts = DbUrlParser::getDatabaseUrlParts($dbUrl);
 
 		$actual = DbUrlParser::getDsnFromParts($parts);
-		self::assertSame("mysql:host=127.0.0.1;dbname=dbName:3306", $actual);
+		self::assertSame("mysql:host=127.0.0.1:3306;dbname=dbName", $actual);
 	}
 
 	public function testGetDatabaseUrlParts(): void
