@@ -73,7 +73,7 @@ class DbUrlParser
 		if ($parts['port'] !== '') {
 			$results .= . ':' . $parts[ 'port' ];
 		}
-		$results .= ';dbname=' . $parts[ 'dbName' ] . ';'
+		$results .= ';dbname=' . $parts[ 'dbName' ] . ';';
 		return $results;
 	}
 
